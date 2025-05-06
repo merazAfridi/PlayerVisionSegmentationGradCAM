@@ -6,7 +6,7 @@ This project uses computer vision to find and highlight football players in pict
 #### Result
 ![Results](https://github.com/merazAfridi/PlayerVision-Football-Players-Segmentation-Website-/blob/main/Result%20Page%20demo.PNG)
 #### About Me
-![About Me](https://github.com/merazAfridi/PlayerVision-Football-Players-Segmentation-Website-/blob/main/about%20me%20page%20demo.PNG)
+
 
 ### Dataset Description
 
