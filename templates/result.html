@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Segmentation Result</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #181c24;
+      color: #f1f1f1;
+    }
+    .about-btn {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      background: #ffcc00;
+      color: #181c24 !important;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      transition: background 0.3s;
+      z-index: 10;
+      border: none;
+      outline: none;
+      display: inline-block;
+    }
+    .about-btn:hover {
+      background: #e6b800;
+      color: #181c24 !important;
+    }
+    .container {
+      max-width: 700px;
+      margin: 32px auto 16px auto;
+      background: #232a36;
+      padding: 22px 16px 16px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+      text-align: center;
+      position: relative;
+    }
+    h1 {
+      color: #ffcc00;
+      font-size: 22px;
+      margin-bottom: 14px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 18px;
+      margin: 16px 0 10px 0;
+    }
+    .image-box {
+      flex: 1 1 180px;
+      text-align: center;
+    }
+    .image-box h2 {
+      font-size: 15px;
+      margin-bottom: 7px;
+    }
+    .image-box img {
+      width: 100%;
+      max-width: 320px;
+      height: 320px;
+      object-fit: contain;
+      border: 2px solid #ffcc00;
+      border-radius: 8px;
+      background: #181c24;
+    }
+    .actions {
+      margin: 14px 0 6px 0;
+    }
+    .actions a {
+      display: inline-block;
+      margin: 6px;
+      padding: 9px 14px;
+      background-color: #ffcc00;
+      color: #181c24;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 15px;
+      transition: background-color 0.3s;
+    }
+    .actions a:hover {
+      background-color: #e6b800;
+    }
+    .footer {
+      margin-top: 10px;
+      padding: 8px;
+      background: #1a1e26;
+      border-radius: 6px;
+      font-size: 13px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <a href="{{ url_for('about') }}" class="about-btn">About Me</a>
+  <div class="container">
+    <h1>Segmentation Result</h1>
+    <div class="image-container">
+      <div class="image-box">
+        <h2>Resized Input Image</h2>
+        <img src="{{ url_for('result_file', filename=original_image) }}" alt="Resized Original Image">
+      </div>
+      <div class="image-box">
+        <h2>Predicted Mask</h2>
+        <img src="{{ url_for('result_file', filename=mask_image) }}" alt="Predicted Mask">
+      </div>
+    </div>
+    <div class="actions">
+      <a href="{{ url_for('result_file', filename=mask_image) }}" download>Download Mask</a>
+      <a href="{{ url_for('index') }}">Upload Another Image</a>
+    </div>
+    <div class="footer">
+      Developed by <strong>Gazi Meraz Mehedi</strong><br>
+      Email: <a href="mailto:meraz.afridi@gmail.com" style="color:#ffcc00;">meraz.afridi@gmail.com</a><br>
+      Contact: <a href="tel:+8801859426070" style="color:#ffcc00;">+8801859426070</a>
+    </div>
+  </div>
+</body>
+</html>

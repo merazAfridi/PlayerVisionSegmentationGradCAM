@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Gazi Meraz Mehedi Afridi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #181c24;
+      color: #f1f1f1;
+    }
+    .container {
+      max-width: 700px;
+      margin: 32px auto 16px auto;
+      background: #232a36;
+      padding: 22px 16px 16px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    h1 {
+      color: #ffcc00;
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid #ffcc00;
+      background: #181c24;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+    }
+    .section-title {
+      color: #ffcc00;
+      font-size: 18px;
+      margin-top: 18px;
+      margin-bottom: 6px;
+    }
+    .info-list {
+      text-align: left;
+      margin: 0 auto 10px auto;
+      max-width: 500px;
+      font-size: 15px;
+    }
+    .info-list strong {
+      color: #ffcc00;
+    }
+    .links a {
+      color: #ffcc00;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #bbb;
+      background: #1a1e26;
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 12px 0 0 0;
+      padding: 9px 18px;
+      background-color: #ffcc00;
+      color: #181c24;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 15px;
+      transition: background-color 0.3s;
+    }
+    .back-btn:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="{{ url_for('static', filename='meraz.jpg') }}" alt="Profile Picture" class="profile-img">
+    <h1>Gazi Meraz Mehedi Afridi</h1>
+    <div class="links">
+      <a href="mailto:meraz.afridi@gmail.com">Email</a> |
+      <a href="https://www.linkedin.com/in/meraz-afridi/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/merazAfridi" target="_blank">GitHub</a>
+    </div>
+    <p style="margin-top:10px;font-size:16px;">
+      Research enthusiast in AI, ML, DL, CV & NLP
+    </p>
+    <div class="section-title">Profile Statement</div>
+    <div class="info-list">
+      Insightful Computer Science and Engineering graduate, specializing in Machine Learning, Computer Vision, Data Science, and Natural Language Processing (NLP). Strong foundation in predictive analysis, pattern recognition, image processing, cloud deployment, and full-stack development. Proficient in programming languages like Python, Java, C, and C++, and experienced with AI/ML tools such as TensorFlow, Keras, PyTorch, and Hugging Face. Passionate about researching emerging innovations and applying technology to solve real-world problems.
+    </div>
+    <div class="section-title">Experience</div>
+    <div class="info-list">
+      <strong>AI Research Intern</strong><br>
+      mPower Social Enterprises Ltd. (Jan '25–Present)<br>
+      <ul>
+        <li>Developing an AI-driven knowledge management system</li>
+        <li>Conducting stakeholder interviews and gap analysis</li>
+        <li>Implementing GenAI/LLM solutions</li>
+      </ul>
+    </div>
+    <div class="section-title">Education</div>
+    <div class="info-list">
+      <strong>North South University</strong><br>
+      B.Sc. in Computer Science and Engineering (CSE)<br>
+      CGPA: 3.57/4.00 (2019–2024)<br>
+      Key Coursework: Computer Engineering Fundamentals, Data Structures and Algorithms, AI, ML, CNN, OOP<br><br>
+      <strong>Bangladesh Air Force Shaheen College, Dhaka</strong><br>
+      Higher Secondary Certificate<br>
+      GPA: 4.75/5.00 (2017–2018)
+    </div>
+    <div class="section-title">Skills</div>
+    <div class="info-list">
+      <strong>Programming Languages:</strong> Python, Java, C, C++, JavaScript, PHP, SQL<br>
+      <strong>AI, ML, DL, NLP & CV Tools:</strong> TensorFlow, PyTorch, Keras, Scikit-learn, HuggingFace, OpenCV, Ollama, MLflow<br>
+      <strong>Frameworks & Libraries:</strong> NumPy, Pandas, Matplotlib, Seaborn, SciPy, Streamlit, React, LangChain<br>
+      <strong>Databases & Cloud:</strong> MySQL, MongoDB, Neo4j, Firebase, AWS, Power BI, Docker, Google Cloud
+    </div>
+    <div class="section-title">Achievements</div>
+    <div class="info-list">
+      Cum Laude distinction from North South University<br>
+      Shah Cement Presents SSC Bright Star 2016 Award<br>
+      Certificate of Appreciation (Team Leader) - 'Warmth For Everyone'
+    </div>
+    <a href="{{ url_for('index') }}" class="back-btn">Back to Home</a>
+    <div class="footer">
+      &copy; 2025 Gazi Meraz Mehedi Afridi
+    </div>
+  </div>
+</body>
+</html>

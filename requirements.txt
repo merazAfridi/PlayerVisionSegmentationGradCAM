@@ -1,0 +1,12 @@
+torchvision
+segmentation-models-pytorch
+albumentations
+requests
+torchvision
+matplotlib
+numpy
+pillow
+scikit-learn
+git+https://github.com/jacobgil/pytorch-grad-cam.git
+#Add other dependencies as needed
+torch==1.12.0
